@@ -25,4 +25,3 @@ class My_Leonardo():
 
         return images
     
-    
