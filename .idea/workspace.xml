@@ -5,9 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f5d99e03-08d1-4993-932a-a1e1f8a7aedc" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/openai_connection.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_interaction.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/PIA_Aplication.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PIA_Aplication.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/audio_analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/audio_analysis.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/audios/090124_143017.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/audios/090124_143120.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/credentials.py" beforeDir="false" afterPath="$PROJECT_DIR$/credentials.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/image.py" beforeDir="false" afterPath="$PROJECT_DIR$/image.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leonardo_connection.py" beforeDir="false" afterPath="$PROJECT_DIR$/leonardo_connection.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +50,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
+    "last_opened_file_path": "D:/Clase/IABD/Programacion_IA/Tema_2/Ejercicios/AWS_Rekognition",
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>

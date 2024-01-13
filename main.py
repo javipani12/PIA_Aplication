@@ -1,7 +1,3 @@
-import audio_analysis as an
-#from credentials import Credentials
+import user_interaction as ui
 
-nombre = an.record_audio()
-print(an.speech_to_text(nombre))
-an.delete_audio(nombre)
-
+ui.test()

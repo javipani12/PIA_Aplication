@@ -1,5 +1,6 @@
 from leonardo_api import Leonardo
 
+
 class My_Leonardo():
     def __init__(self, auth_token):
         self.leonardo = Leonardo(auth_token= auth_token)
@@ -24,4 +25,3 @@ class My_Leonardo():
             images.append(response_json[element]['url'])
 
         return images
-    

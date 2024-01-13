@@ -1,4 +1,4 @@
-class Image():
+class Image:
     def __init__(self, prompt, num_images, model_id, width, height, guidance_scale):
         self.prompt = prompt
         self.num_images = num_images

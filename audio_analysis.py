@@ -45,9 +45,9 @@ def record_audio():
     return audio_name
 
 
-def speech_to_text(audio_name):
-    key = ''
-    client = OpenAI(api_key=key)
+# Method to transform an audio to text
+def speech_to_text(audio_name, openai_key):
+    client = OpenAI(api_key=openai_key)
     audio_file = open(audio_name, "rb")
     transcript = client.audio.transcriptions.create(
         model="whisper-1",
@@ -58,7 +58,6 @@ def speech_to_text(audio_name):
 
     return transcript
 
-
+# Method to delete an audio
 def delete_audio(audio_name):
-    # Delete de audio generated before
     os.remove(audio_name)
