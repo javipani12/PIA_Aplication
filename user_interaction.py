@@ -1,5 +1,5 @@
 import audio_analysis as an
-import credentials as cr
+import credentials as cs
 import openai_connection as opc
 import leonardo_connection as lc
 
