@@ -1,0 +1,23 @@
+2024-01-15 13:06:54,327 [DEBUG] Leonardo: Leonardo init complete
+2024-01-15 13:06:54,327 [DEBUG] Leonardo: Requesting user info: GET https://cloud.leonardo.ai/api/rest/v1/me
+2024-01-15 13:06:55,841 [DEBUG] Leonardo: User info: {'user_details': [{'user': {'id': 'd232c124-4553-4745-996d-9b7e3591497a', 'username': 'diegocs77'}, 'tokenRenewalDate': None, 'subscriptionTokens': 150, 'subscriptionGptTokens': 72, 'subscriptionModelTokens': 1, 'apiConcurrencySlots': 5}]}
+2024-01-15 13:16:22,846 [DEBUG] Leonardo: Leonardo init complete
+2024-01-15 13:16:22,846 [DEBUG] Leonardo: Requesting user info: GET https://cloud.leonardo.ai/api/rest/v1/me
+2024-01-15 13:16:23,936 [DEBUG] Leonardo: User info: {'user_details': [{'user': {'id': 'd232c124-4553-4745-996d-9b7e3591497a', 'username': 'diegocs77'}, 'tokenRenewalDate': None, 'subscriptionTokens': 150, 'subscriptionGptTokens': 72, 'subscriptionModelTokens': 1, 'apiConcurrencySlots': 5}]}
+2024-01-15 13:17:44,563 [DEBUG] Leonardo: Leonardo init complete
+2024-01-15 13:17:44,564 [DEBUG] Leonardo: Requesting user info: GET https://cloud.leonardo.ai/api/rest/v1/me
+2024-01-15 13:17:45,847 [DEBUG] Leonardo: User info: {'user_details': [{'user': {'id': 'd232c124-4553-4745-996d-9b7e3591497a', 'username': 'diegocs77'}, 'tokenRenewalDate': None, 'subscriptionTokens': 150, 'subscriptionGptTokens': 72, 'subscriptionModelTokens': 1, 'apiConcurrencySlots': 5}]}
+2024-01-15 13:18:40,702 [DEBUG] Leonardo: Leonardo init complete
+2024-01-15 13:18:40,703 [DEBUG] Leonardo: Requesting user info: GET https://cloud.leonardo.ai/api/rest/v1/me
+2024-01-15 13:18:41,857 [DEBUG] Leonardo: User info: {'user_details': [{'user': {'id': 'd232c124-4553-4745-996d-9b7e3591497a', 'username': 'diegocs77'}, 'tokenRenewalDate': None, 'subscriptionTokens': 150, 'subscriptionGptTokens': 72, 'subscriptionModelTokens': 1, 'apiConcurrencySlots': 5}]}
+2024-01-15 13:20:09,357 [DEBUG] Leonardo: Leonardo init complete
+2024-01-15 13:20:09,358 [DEBUG] Leonardo: Requesting user info: GET https://cloud.leonardo.ai/api/rest/v1/me
+2024-01-15 13:20:10,312 [DEBUG] Leonardo: User info: {'user_details': [{'user': {'id': 'd232c124-4553-4745-996d-9b7e3591497a', 'username': 'diegocs77'}, 'tokenRenewalDate': None, 'subscriptionTokens': 150, 'subscriptionGptTokens': 72, 'subscriptionModelTokens': 1, 'apiConcurrencySlots': 5}]}
+2024-01-15 13:21:18,143 [DEBUG] Leonardo: Leonardo init complete
+2024-01-15 13:21:18,143 [DEBUG] Leonardo: Requesting user info: GET https://cloud.leonardo.ai/api/rest/v1/me
+2024-01-15 13:21:18,951 [DEBUG] Leonardo: User info: {'user_details': [{'user': {'id': 'd232c124-4553-4745-996d-9b7e3591497a', 'username': 'diegocs77'}, 'tokenRenewalDate': None, 'subscriptionTokens': 150, 'subscriptionGptTokens': 72, 'subscriptionModelTokens': 1, 'apiConcurrencySlots': 5}]}
+2024-01-15 13:24:25,774 [DEBUG] Leonardo: Leonardo init complete
+2024-01-15 13:24:25,775 [DEBUG] Leonardo: Requesting user info: GET https://cloud.leonardo.ai/api/rest/v1/me
+2024-01-15 13:24:26,926 [DEBUG] Leonardo: User info: {'user_details': [{'user': {'id': 'd232c124-4553-4745-996d-9b7e3591497a', 'username': 'diegocs77'}, 'tokenRenewalDate': None, 'subscriptionTokens': 150, 'subscriptionGptTokens': 72, 'subscriptionModelTokens': 1, 'apiConcurrencySlots': 5}]}
+2024-01-15 13:24:26,929 [DEBUG] Leonardo: Requesting post generations: POST https://cloud.leonardo.ai/api/rest/v1/generations with payload: {'prompt': 'A blonde girl with brilliant long hair, blue eyes. The face must be the more beautiful that have never existed.She is wearing a top with jeans. Her body estructure is like a top model.', 'negative_prompt': None, 'modelId': 'd232c124-4553-4745-996d-9b7e3591497a', 'sd_version': None, 'num_images': 4, 'width': 1024, 'height': 768, 'num_inference_steps': 40, 'guidance_scale': 7, 'init_generation_image_id': None, 'init_image_id': None, 'init_strength': None, 'scheduler': None, 'presetStyle': None, 'tiling': False, 'public': False, 'promptMagic': True, 'controlNet': False, 'controlNetType': None}
+2024-01-15 13:24:28,357 [ERROR] Leonardo: Error occurred while post generations: 400 Client Error: Bad Request for url: https://cloud.leonardo.ai/api/rest/v1/generations
