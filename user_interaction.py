@@ -5,7 +5,7 @@ import leonardo_connection as lc
 
 
 def test_openai():
-    openai_key = cr.Credentials.OPENAI
+    openai_key = cs.Credentials.OPENAI
     openai_client = opc.My_OpenAI(openai_key)
     name = an.record_audio()
     prompt = an.speech_to_text(name, openai_key)
