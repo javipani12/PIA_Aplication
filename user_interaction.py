@@ -4,10 +4,12 @@ import credentials as cs
 import openai_connection as opc
 import leonardo_connection as lc
 from downloads import download_image
+from credentials import Credentials
 
 
 def test_openai():
-    openai_key = cs.Credentials.OPENAI
+    my_credentials = Credentials()
+    openai_key = my_credentials.OPENAI
     openai_client = opc.My_OpenAI(openai_key)
     name = an.record_audio()
     prompt = an.speech_to_text(name, openai_key)
@@ -23,7 +25,8 @@ def test_openai():
 
 
 def test_leonardo():
-    my_leonardo = lc.My_Leonardo(cs.Credentials.LEONARDO)
+    my_credentials = Credentials()
+    my_leonardo = lc.My_Leonardo(my_credentials.OPENAI)
     user_info = my_leonardo.get_user_info()
     user_id = user_info["user_details"][0]["user"]["id"]
 
@@ -36,8 +39,10 @@ def test_leonardo():
 
 
 def full_test():
-    openai_client = opc.My_OpenAI(cs.Credentials.OPENAI)
-    leonardo_client = lc.My_Leonardo(cs.Credentials.LEONARDO)
+    my_credentials = Credentials()
+    
+    openai_client = opc.My_OpenAI(my_credentials.openai_key)
+    leonardo_client = lc.My_Leonardo(my_credentials.leonardo_key)
 
     audio_name = an.record_audio()
     prompt = an.speech_to_text(audio_name, openai_client.openai_key)

@@ -3,7 +3,7 @@ from openai import OpenAI
 import pyaudio
 import wave
 from datetime import datetime
-import credentials
+from credentials import Credentials
 
 
 def record_audio():
@@ -58,6 +58,7 @@ def speech_to_text(audio_name, openai_key):
     :param openai_key: (String) The key of your OpenAI account
     :return: (String) The generated transcription
     """
+    my_credentials = Credentials()
     openai_client = OpenAI(api_key=openai_key)
     audio_file = open(audio_name, "rb")
     print("Generating the transcription...")
@@ -65,7 +66,7 @@ def speech_to_text(audio_name, openai_key):
         model="whisper-1",
         file=audio_file,
         response_format="text",
-        language=credentials.Credentials.LANGUAGE
+        language=my_credentials.laguage
     )
     print("Transcription generated successfully...")
 
