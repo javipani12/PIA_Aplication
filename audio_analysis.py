@@ -3,15 +3,20 @@ from openai import OpenAI
 import pyaudio
 import wave
 from datetime import datetime
+import credentials
 
 
-# This method is used to record an audio in .wav format
 def record_audio():
-    chunk = 1024                        # Record in samples of 1024 fragments
-    sample_format = pyaudio.paInt16     # 16 bits per sample
-    channels = 2                        # Use 2 channels to record
-    fs = 44100                          # Record 44100 samples per second
-    p = pyaudio.PyAudio()               # Create an instance of PyAudio
+    """
+    This function is used to record an audio in .wav format
+
+    :return: (String) File name of the created audio
+    """
+    chunk = 1024  # Record in samples of 1024 fragments
+    sample_format = pyaudio.paInt16  # 16 bits per sample
+    channels = 2  # Use 2 channels to record
+    fs = 44100  # Record 44100 samples per second
+    p = pyaudio.PyAudio()  # Create an instance of PyAudio
 
     print('Recording...')
     stream = p.open(format=sample_format,
@@ -19,7 +24,7 @@ def record_audio():
                     rate=fs,
                     frames_per_buffer=chunk,
                     input=True)
-    frames = []     # Initialize the array which would contains the frames
+    frames = []  # Initialize the array which would contains the frames
 
     # Keep the data on the chunks for the indicated time (in seconds)
     for i in range(0, int(fs / chunk * 7)):
@@ -45,19 +50,32 @@ def record_audio():
     return audio_name
 
 
-# Method to transform an audio to text
 def speech_to_text(audio_name, openai_key):
-    client = OpenAI(api_key=openai_key)
+    """
+    Method to transform an audio to text
+
+    :param audio_name: (String) File name of the audio to transcript
+    :param openai_key: (String) The key of your OpenAI account
+    :return: (String) The generated transcription
+    """
+    openai_client = OpenAI(api_key=openai_key)
     audio_file = open(audio_name, "rb")
-    transcript = client.audio.transcriptions.create(
+    print("Generating the transcription...")
+    transcript = openai_client.audio.transcriptions.create(
         model="whisper-1",
         file=audio_file,
         response_format="text",
-        language="es"
+        language=credentials.Credentials.LANGUAGE
     )
+    print("Transcription generated successfully...")
 
     return transcript
 
-# Method to delete an audio
+
 def delete_audio(audio_name):
+    """
+    Method to delete an audio
+
+    :param audio_name: (String) File name of the audio to delete
+    """
     os.remove(audio_name)

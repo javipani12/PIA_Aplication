@@ -3,17 +3,27 @@ import requests
 from PIL import Image
 
 
-@staticmethod
-def download_image(url, edit=False, name=""):
+def download_image(url, ai, variation=False, name=""):
+    """
+    This method is used to download an image using its URL
+
+    :param url: (String) URL of the image to download
+    :param ai: (String) This param indicates which AI has generated the photo
+    :param variation: (Boolean) It's used to determinate if the photo of the URL
+    is a new one or a variation of other one
+    :param name: (String) If variation is True, then this variable will be used to create
+    the name of the image based on name of the original photo
+    :return:
+    """
     now = datetime.now()
     data = requests.get(url).content
 
-    if edit:
+    if variation:
         # If it's an edited image, we get the name of it
-        file_name = name.split(".")[0] + "_edit." + name.split(".")[1]
+        file_name = name.split(".")[0] + "_variation." + name.split(".")[1]
     else:
         # If it's a new image, we create a name for it
-        file_name = "images/" + now.strftime("%d%m%y_%H%M%S") + ".png"
+        file_name = f"images/{ai}_" + now.strftime("%d%m%y_%H%M%S") + ".png"
 
     file = open(file_name, "wb")
     file.write(data)
