@@ -1,6 +1,4 @@
-import audio_analysis
 import audio_analysis as an
-import credentials as cs
 import openai_connection as opc
 import leonardo_connection as lc
 from downloads import download_image
@@ -9,7 +7,7 @@ from credentials import Credentials
 
 def test_openai():
     my_credentials = Credentials()
-    openai_key = my_credentials.OPENAI
+    openai_key = my_credentials.openai_key
     openai_client = opc.My_OpenAI(openai_key)
     name = an.record_audio()
     prompt = an.speech_to_text(name, openai_key)
@@ -26,7 +24,7 @@ def test_openai():
 
 def test_leonardo():
     my_credentials = Credentials()
-    my_leonardo = lc.My_Leonardo(my_credentials.OPENAI)
+    my_leonardo = lc.My_Leonardo(my_credentials.leonardo_key)
     user_info = my_leonardo.get_user_info()
     user_id = user_info["user_details"][0]["user"]["id"]
 
@@ -53,4 +51,4 @@ def full_test():
     img_openai = download_image(img_url_openai, "OpenAI")
     img_leonardo = download_image(img_url_leonardo, "Leonardo")
 
-    audio_analysis.delete_audio(audio_name)
+    an.delete_audio(audio_name)

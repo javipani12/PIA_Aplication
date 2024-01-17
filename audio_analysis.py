@@ -66,7 +66,7 @@ def speech_to_text(audio_name, openai_key):
         model="whisper-1",
         file=audio_file,
         response_format="text",
-        language=my_credentials.laguage
+        language=my_credentials.language
     )
     print("Transcription generated successfully...")
 
