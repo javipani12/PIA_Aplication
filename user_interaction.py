@@ -1,3 +1,4 @@
+import audio_analysis
 import audio_analysis as an
 import credentials as cs
 import openai_connection as opc
@@ -46,3 +47,5 @@ def full_test():
 
     img_openai = download_image(img_url_openai, "OpenAI")
     img_leonardo = download_image(img_url_leonardo, "Leonardo")
+
+    audio_analysis.delete_audio(audio_name)
