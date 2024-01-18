@@ -6,10 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="f5d99e03-08d1-4993-932a-a1e1f8a7aedc" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/audio_analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/audio_analysis.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/credentials.py" beforeDir="false" afterPath="$PROJECT_DIR$/credentials.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leonardo_async.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user_interaction.py" beforeDir="false" afterPath="$PROJECT_DIR$/user_interaction.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/audio_analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/audio/audio_analysis.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/credentials.py" beforeDir="false" afterPath="$PROJECT_DIR$/credentials/credentials.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/downloads.py" beforeDir="false" afterPath="$PROJECT_DIR$/download/downloads.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/image.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leonardo_connection.py" beforeDir="false" afterPath="$PROJECT_DIR$/connections/leonardo_connection.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/openai_connection.py" beforeDir="false" afterPath="$PROJECT_DIR$/connections/openai_connection.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user_interaction.py" beforeDir="false" afterPath="$PROJECT_DIR$/user_interaction/html_generation.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,17 +41,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.audio_analysis.executor": "Run",
-    "Python.main.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "D:/Clase/IABD/Programacion_IA/Tema_2/Ejercicios/AWS_Rekognition",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.audio_analysis.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Clase/IABD/Programacion_IA/Tema_2/Ejercicios/AWS_Rekognition&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\IABD\Desktop\IABD\Programacion_IA\Tema_2\Ejercicios\PIA_Aplication\download" />
+      <recent name="C:\Users\IABD\Desktop\IABD\Programacion_IA\Tema_2\Ejercicios\PIA_Aplication\audio" />
+      <recent name="C:\Users\IABD\Desktop\IABD\Programacion_IA\Tema_2\Ejercicios\PIA_Aplication\credentials" />
+      <recent name="C:\Users\IABD\Desktop\IABD\Programacion_IA\Tema_2\Ejercicios\PIA_Aplication\user_interaction" />
+      <recent name="C:\Users\IABD\Desktop\IABD\Programacion_IA\Tema_2\Ejercicios\PIA_Aplication\connections" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>

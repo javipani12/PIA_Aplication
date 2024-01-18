@@ -1,5 +1,5 @@
 from openai import OpenAI
-from downloads import download_image
+from download.downloads import download_image
 
 
 class My_OpenAI:

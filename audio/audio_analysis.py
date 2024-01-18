@@ -3,7 +3,7 @@ from openai import OpenAI
 import pyaudio
 import wave
 from datetime import datetime
-from credentials import Credentials
+from credentials.credentials import Credentials
 
 
 def record_audio():
@@ -80,3 +80,43 @@ def delete_audio(audio_name):
     :param audio_name: (String) File name of the audio to delete
     """
     os.remove(audio_name)
+
+
+def key_words(prompt):
+    """
+    This function is used to improve the prompt for the image generation
+    :param prompt: (String) Text generated from audio
+    :return: (String) Improved text for prompt
+    """
+    improved_prompt = ""
+
+    if prompt.contains(""):
+        improved_prompt = prompt + ""
+        return improved_prompt
+    elif prompt.contains(""):
+        improved_prompt = prompt + ""
+        return improved_prompt
+    elif prompt.contains(""):
+        improved_prompt = prompt + ""
+        return improved_prompt
+    elif prompt.contains(""):
+        improved_prompt = prompt + ""
+        return improved_prompt
+    elif prompt.contains(""):
+        improved_prompt = prompt + ""
+        return improved_prompt
+    elif prompt.contains(""):
+        improved_prompt = prompt + ""
+        return improved_prompt
+    elif prompt.contains(""):
+        improved_prompt = prompt + ""
+        return improved_prompt
+    elif prompt.contains(""):
+        improved_prompt = prompt + ""
+        return improved_prompt
+    elif prompt.contains(""):
+        improved_prompt = prompt + ""
+        return improved_prompt
+    elif prompt.contains(""):
+        improved_prompt = prompt + ""
+        return improved_prompt
