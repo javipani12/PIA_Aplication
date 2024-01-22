@@ -1,4 +1,4 @@
-from openai import OpenAI
+from openai import OpenAI, BadRequestError
 from download.downloads import download_image
 
 
@@ -15,14 +15,18 @@ class My_OpenAI:
         :return: (String) URL of the generated image
         """
         print("Generating the image with OpenAI...")
-        response = self.openai_client.images.generate(
-            model="dall-e-2",
-            prompt=prompt,
-            size="1024x1024",
-            quality="standard",
-            n=1,
-        )
-        print("Image generated successfully...")
+        try:
+            response = self.openai_client.images.generate(
+                model="dall-e-2",
+                prompt=prompt,
+                size="1024x1024",
+                quality="standard",
+                n=1,
+            )
+            print("Image generated successfully...")
+        except BadRequestError as bre:
+            print("An exception occurred", bre.message.split("'message'")[1].split("'param'")[0].split(",")[0])
+            exit()
         return response.data[0].url
 
     def generate_variation(self, file_name):

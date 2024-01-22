@@ -19,7 +19,7 @@ def download_image(url, ai, variation=False, name=""):
     data = requests.get(url).content
 
     if variation:
-        # If it's an edited image, we get the name of it
+        # If it's a variation image from the original, we get the name of it
         file_name = name.split(".")[0] + "_variation." + name.split(".")[1]
     else:
         # If it's a new image, we create a name for it
