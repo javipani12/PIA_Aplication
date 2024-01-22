@@ -4,17 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f5d99e03-08d1-4993-932a-a1e1f8a7aedc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/audio_and_text/text_analysis.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/audio/audio_analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/audio_and_text/audio_analysis.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/connections/leonardo_connection.py" beforeDir="false" afterPath="$PROJECT_DIR$/connections/leonardo_connection.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/connections/openai_connection.py" beforeDir="false" afterPath="$PROJECT_DIR$/connections/openai_connection.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/download/downloads.py" beforeDir="false" afterPath="$PROJECT_DIR$/download/downloads.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leonardo_async.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user_interaction/html_generation.py" beforeDir="false" afterPath="$PROJECT_DIR$/user_interaction/html_generation.py" afterDir="false" />
-    </list>
+    <list default="true" id="f5d99e03-08d1-4993-932a-a1e1f8a7aedc" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
