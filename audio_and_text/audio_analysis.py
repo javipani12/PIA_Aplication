@@ -16,12 +16,16 @@ def record_audio():
     fs = 44100  # Record 44100 samples per second
     p = pyaudio.PyAudio()  # Create an instance of PyAudio
 
-    print('Recording...')
-    stream = p.open(format=sample_format,
-                    channels=channels,
-                    rate=fs,
-                    frames_per_buffer=chunk,
-                    input=True)
+    try:
+        stream = p.open(format=sample_format,
+                        channels=channels,
+                        rate=fs,
+                        frames_per_buffer=chunk,
+                        input=True)
+        print('Recording...')
+    except Exception as ex:
+        print("An error occurred", ex)
+        exit()
     frames = []  # Initialize the array which would contains the frames
 
     # Keep the data on the chunks for the indicated time (in seconds)
