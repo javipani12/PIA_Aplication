@@ -19,4 +19,6 @@ img_url_leonardo = leonardo_client.image_generation(improved_prompt)
 img_openai = download_image(img_url_openai, "OpenAI")
 img_leonardo = download_image(img_url_leonardo, "Leonardo")
 
+html.generate_html(img_openai, img_leonardo)
+
 an.delete_audio(audio_name)

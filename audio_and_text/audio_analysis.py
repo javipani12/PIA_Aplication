@@ -62,13 +62,17 @@ def speech_to_text(audio_name, openai_client, language):
     :return: (String) The generated transcription
     """
     audio_file = open(audio_name, "rb")
-    print("Generating the transcription...")
-    transcript = openai_client.audio.transcriptions.create(
-        model="whisper-1",
-        file=audio_file,
-        response_format="text",
-        language=language
-    )
+    try:
+        transcript = openai_client.audio.transcriptions.create(
+            model="whisper-1",
+            file=audio_file,
+            response_format="text",
+            language=language
+        )
+        print("Generating the transcription...")
+    except Exception as ex:
+        print("An error occurred", ex)
+        exit()
     print("Transcription generated successfully...")
 
     return transcript
