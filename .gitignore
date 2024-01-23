@@ -1,6 +1,11 @@
 # dotenv configuration.
 .env
+*.env
 .png
+*.png
 .wav
+*.wav
 .log
 *.log
+.html
+*.html

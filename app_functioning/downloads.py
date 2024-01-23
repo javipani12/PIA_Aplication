@@ -23,12 +23,12 @@ def download_image(url, ai, variation=False, name=""):
         file_name = name.split(".")[0] + "_variation." + name.split(".")[1]
     else:
         # If it's a new image, we create a name for it
-        file_name = f"images/{ai}_" + now.strftime("%d%m%y_%H%M%S") + ".png"
+        file_name = f"media/images/{ai}_" + now.strftime("%d%m%y_%H%M%S") + ".png"
 
     file = open(file_name, "wb")
     file.write(data)
 
-    img = Image.open(file_name)
-    img.show()
+#    img = Image.open(file_name)
+#    img.show()
 
     return file_name

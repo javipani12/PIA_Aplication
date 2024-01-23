@@ -1,5 +1,5 @@
 from openai import OpenAI, BadRequestError
-from download.downloads import download_image
+from app_functioning.downloads import download_image
 
 
 class My_OpenAI:
@@ -43,3 +43,27 @@ class My_OpenAI:
         image_url = response.data[0].url
         print("Variation image generated successfully...")
         download_image(image_url, "OpenAI", True, file_name)
+
+    def speech_to_text(self, audio_name, language):
+        """
+        Method to transform an audio_and_text to text
+
+        :param audio_name: (String) File name of the audio_and_text to transcript
+        :param language: (String) The language to transcript the audio_and_text
+        :return: (String) The generated transcription
+        """
+        audio_file = open(audio_name, "rb")
+        try:
+            transcript = self.openai_client.audio.transcriptions.create(
+                model="whisper-1",
+                file=audio_file,
+                response_format="text",
+                language=language
+            )
+            print("Generating the transcription...")
+        except Exception as ex:
+            print("An error occurred", ex)
+            exit()
+        print("Transcription generated successfully...")
+
+        return transcript

@@ -41,7 +41,7 @@ def record_audio():
 
     # Store the record as a WAV archive
     now = datetime.now()
-    audio_name = "audios/" + now.strftime("%d%m%y_%H%M%S") + ".wav"
+    audio_name = "media/audios/" + now.strftime("%d%m%y_%H%M%S") + ".wav"
     wf = wave.open(audio_name, 'wb')
     wf.setnchannels(channels)
     wf.setsampwidth(p.get_sample_size(sample_format))
@@ -50,32 +50,6 @@ def record_audio():
     wf.close()
 
     return audio_name
-
-
-def speech_to_text(audio_name, openai_client, language):
-    """
-    Method to transform an audio_and_text to text
-
-    :param audio_name: (String) File name of the audio_and_text to transcript
-    :param openai_client: (String) The OpenAI client
-    :param language: (String) The language to transcript the audio_and_text
-    :return: (String) The generated transcription
-    """
-    audio_file = open(audio_name, "rb")
-    try:
-        transcript = openai_client.audio.transcriptions.create(
-            model="whisper-1",
-            file=audio_file,
-            response_format="text",
-            language=language
-        )
-        print("Generating the transcription...")
-    except Exception as ex:
-        print("An error occurred", ex)
-        exit()
-    print("Transcription generated successfully...")
-
-    return transcript
 
 
 def delete_audio(audio_name):
