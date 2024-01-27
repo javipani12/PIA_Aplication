@@ -12,7 +12,7 @@ def record_audio():
     """
     chunk = 1024  # Record in samples of 1024 fragments
     sample_format = pyaudio.paInt16  # 16 bits per sample
-    channels = 1  # Use 2 channels to record
+    channels = 2  # Use 2 channels to record
     fs = 44100  # Record 44100 samples per second
     p = pyaudio.PyAudio()  # Create an instance of PyAudio
 

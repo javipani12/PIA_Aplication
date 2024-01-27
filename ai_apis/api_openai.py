@@ -24,8 +24,8 @@ class My_OpenAI:
                 n=1,
             )
             print("Image generated successfully...")
-        except BadRequestError as bre:
-            print("An exception occurred", bre.message.split("'message'")[1].split("'param'")[0].split(",")[0])
+        except Exception as ex:
+            print("An exception occurred", ex)
             exit()
         return response.data[0].url
 
