@@ -5,19 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f5d99e03-08d1-4993-932a-a1e1f8a7aedc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/media/html/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/audio_and_text/audio_analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_functioning/audio.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/audio_and_text/text_analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_functioning/text.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/audios/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/media/audios/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/connections/leonardo_connection.py" beforeDir="false" afterPath="$PROJECT_DIR$/ai_apis/api_leonardo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/connections/openai_connection.py" beforeDir="false" afterPath="$PROJECT_DIR$/ai_apis/api_openai.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/credentials/credentials.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_functioning/credentials.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/download/downloads.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_functioning/downloads.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/media/images/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user_interaction/html_generation.py" beforeDir="false" afterPath="$PROJECT_DIR$/user_interaction/html_generation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app_functioning/text.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_functioning/text.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

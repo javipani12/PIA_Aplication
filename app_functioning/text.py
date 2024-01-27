@@ -1,5 +1,6 @@
 import translators as ts
-
+import json
+import os
 
 def improve_prompt(prompt, language):
     """
@@ -34,12 +35,18 @@ def create_improved_prompt(prompt, key_word, original_lan=True, language='es'):
     :return: (String) The generated improved prompt
     """
     content = ""
+    dictionary = {}
+    if not os.path.exists("media/json/prompt.json"):
+        if key_word == "niños":
+            content = "Estilo infantil, detallado, con colores vivos y buena resolución"
+        elif key_word == "":
+            content = ""
+    else:
+        with open("media/json/prompt.json") as file:
+            dictionary = json.load(file)
 
-    if key_word == "niños":
-        content = "Estilo infantil, detallado, con colores vivos y buena resolución"
-    elif key_word == "":
-        content = ""
-
+        if key_word in dictionary.keys():
+            content = dictionary[key_word]
 
     if original_lan:
         improved_prompt = prompt + content
