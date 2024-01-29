@@ -10,17 +10,23 @@ def improve_prompt(prompt, language):
     :param language: (String) The language to translate the improved prompt
     :return: (String) Improved text for prompt
     """
+    counter = 0
 
-    with open("media/json/prompt.json") as file:
+    with open("media/json/prompt.json", encoding="utf-8") as file:
         dictionary = json.load(file)
 
     for word in dictionary.keys():
         if language == 'es':
             if word in prompt:
+                counter += 1
                 return create_improved_prompt(prompt, dictionary, word)
         else:
             if translate(word, language) in prompt:
+                counter += 1
                 return create_improved_prompt(prompt, dictionary, word, False, language)
+
+    if counter == 0:
+        return prompt
 
 
 def create_improved_prompt(prompt, prompt_dictionary, key_word, original_lan=True, language='es'):

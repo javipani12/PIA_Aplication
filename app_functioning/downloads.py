@@ -28,7 +28,4 @@ def download_image(url, ai, variation=False, name=""):
     file = open(file_name, "wb")
     file.write(data)
 
-#    img = Image.open(file_name)
-#    img.show()
-
     return file_name

@@ -13,7 +13,6 @@ class My_Leonardo():
         """
         return self.leonardo.get_user_info()
 
-
     def image_generation(self, prompt):
         """
         This function is used to generate an image on Leonardo based on a prompt
@@ -39,7 +38,3 @@ class My_Leonardo():
             print("An error occurred", ex)
             exit()
         return image_route
-
-
-    def generate_variation(self):
-        pass
