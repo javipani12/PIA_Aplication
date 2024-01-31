@@ -15,33 +15,58 @@ def generate_html(openai_image, leonardo_image):
     full_path_leonardo = os.path.abspath(leonardo_image)
 
     html_page = f"""
-        <!DOCTYPE html>
-        <html lang="es">
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Tabla con Imágenes</title>
-        </head>
-        <body>
-        
-        <table style="width:100%; border-collapse: collapse;">
-            <tr>
-                <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">OpenAI</th>
-                <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Leonardo</th>
-            </tr>
-            <tr>
-                <td style="border: 1px solid #ddd; padding: 8px;"><img src="{full_path_openai}" alt="OpenAI" style="width: 100%; height: auto;"></td>
-                <td style="border: 1px solid #ddd; padding: 8px;"><img src="{full_path_leonardo}" alt="Leonardo" style="width: 100%; height: auto;"></td>
-            </tr>
-        </table>
-        
-        </body>
-        </html>
-    """
+            <!DOCTYPE html>
+            <html lang="es">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Tabla con Imágenes</title>
+                <style>
+                    body {{
+                        background-color: #f5f5f5;
+                    }}
+                    table {{
+                        width: 100%; 
+                        border-collapse: collapse;
+                        background-color: #e0e0e0;
+                    }}
+                    th, td {{
+                        border: 2px solid #777;
+                        padding: 8px;
+                        text-align: center;
+                    }}
+                    th {{
+                        background-color: #333;
+                        color: #fff;
+                    }}
+                    th span {{
+                        color: #ffcc00;
+                    }}
+                    td {{
+                        background-color: #f2f2f2;
+                    }}
+                </style>
+            </head>
+            <body>
+
+            <table>
+                <tr>
+                    <th><span>OpenAI</span></th>
+                    <th><span>Leonardo</span></th>
+                </tr>
+                <tr>
+                    <td><img src="{full_path_openai}" alt="OpenAI" style="width: 100%; height: auto;"></td>
+                    <td><img src="{full_path_leonardo}" alt="Leonardo" style="width: 100%; height: auto;"></td>
+                </tr>
+            </table>
+
+            </body>
+            </html>
+        """
 
     file_name = "media/html/" + now.strftime("%d%m%y_%H%M%S") + ".html"
-    file = open(file_name, "w")
-    file.write(html_page)
+    with open(file_name, "w", encoding="utf-8") as file:
+        file.write(html_page)
 
     return file_name
 
