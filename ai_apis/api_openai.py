@@ -1,5 +1,4 @@
-from openai import OpenAI, BadRequestError
-from app_functioning.downloads import download_image
+from openai import OpenAI
 
 
 class My_OpenAI:
@@ -28,21 +27,6 @@ class My_OpenAI:
             print("An exception occurred", ex)
             exit()
         return response.data[0].url
-
-    def generate_variation(self, file_name):
-        """
-        Function to generate a variation of an image
-        :param file_name: (String) File name of the image to generate the variation
-        """
-        print("Generating a variation of the original image of OpenAI...")
-        response = self.openai_client.images.create_variation(
-            image=open(file_name, "rb"),
-            n=2,
-            size="1024x1024"
-        )
-        image_url = response.data[0].url
-        print("Variation image generated successfully...")
-        download_image(image_url, "OpenAI", True, file_name)
 
     def speech_to_text(self, audio_name, language):
         """

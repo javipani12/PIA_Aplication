@@ -1,6 +1,5 @@
 from datetime import datetime
 import requests
-from PIL import Image
 
 
 def download_image(url, ai, variation=False, name=""):
