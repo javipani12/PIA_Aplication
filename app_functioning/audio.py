@@ -6,9 +6,9 @@ from datetime import datetime
 
 def record_audio():
     """
-    This function is used to record an audio_and_text in .wav format
+    This function is used to record an audio in .wav format
 
-    :return: (String) File name of the created audio_and_text
+    :return: (String) File name of the created audio
     """
     chunk = 1024  # Record in samples of 1024 fragments
     sample_format = pyaudio.paInt16  # 16 bits per sample
@@ -54,8 +54,8 @@ def record_audio():
 
 def delete_audio(audio_name):
     """
-    Method to delete an audio_and_text
+    Method to delete an audio
 
-    :param audio_name: (String) File name of the audio_and_text to delete
+    :param audio_name: (String) File name of the audio to delete
     """
     os.remove(audio_name)

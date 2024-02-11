@@ -12,7 +12,7 @@ def download_image(url, ai, variation=False, name=""):
     is a new one or a variation of other one
     :param name: (String) If variation is True, then this variable will be used to create
     the name of the image based on name of the original photo
-    :return:
+    :return: (String) The file name of the downloaded image
     """
     now = datetime.now()
     data = requests.get(url).content

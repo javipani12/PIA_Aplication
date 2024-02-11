@@ -6,9 +6,9 @@ def improve_prompt(prompt, language):
     """
     This function is used to improve the prompt for the image generation
 
-    :param prompt: (String) Text generated from audio_and_text
-    :param language: (String) The language to translate the improved prompt
-    :return: (String) Improved text for prompt
+    :param prompt: (String) Text generated from the transcription
+    :param language: (String) The language to translate the prompt
+    :return: (String) Returns the generated improved prompt
     """
     counter = 0
 
@@ -31,12 +31,11 @@ def improve_prompt(prompt, language):
 
 def create_improved_prompt(prompt, prompt_dictionary, key_word, original_lan=True, language='es'):
     """
-    Function to create an improved prompt for the image generation, giving more details
-    about the photo to help AIs to generate a better pic.
+    This function selects the details for the improved prompt based on the key word
 
-    :param prompt_dictionary: (Dict) Dictionary that contains the improved prompt related to the keywords
     :param prompt: (String) The text that will be improved
-    :param key_word: (String) It depends on this word what type will be the improved prompt
+    :param prompt_dictionary: (Dict) Dictionary that contains the details related to the keywords
+    :param key_word: (String) It depends on this word which details will be selected on prompt_dictionary
     :param original_lan: (Boolean) It determines if the language is spanish or other one
     :param language: (String) Language to translate the content of the improved prompt
     :return: (String) The generated improved prompt

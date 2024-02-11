@@ -17,7 +17,7 @@ class My_Leonardo():
         """
         This function is used to generate an image on Leonardo based on a prompt
 
-        :param prompt: (String) The generation of the image is based on this text
+        :param prompt: (String) The text to generate the image
         :return: (String) URL of the generated image
         """
         print("Generating the image with Leonardo...")

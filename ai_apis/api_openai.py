@@ -8,9 +8,9 @@ class My_OpenAI:
 
     def generate_image(self, prompt):
         """
-        This function is used to generate an image on Leonardo based on a prompt
+        This function is used to generate an image on OpenAI based on a prompt
 
-        :param prompt: (String) The generation of the image is based on this text
+        :param prompt: (String) The text to generate the image
         :return: (String) URL of the generated image
         """
         print("Generating the image with OpenAI...")
@@ -30,10 +30,10 @@ class My_OpenAI:
 
     def speech_to_text(self, audio_name, language):
         """
-        Method to transform an audio_and_text to text
+        Method to transform an audio to text
 
-        :param audio_name: (String) File name of the audio_and_text to transcript
-        :param language: (String) The language to transcript the audio_and_text
+        :param audio_name: (String) File name of the audio to transcript
+        :param language: (String) The language to transcript the audio
         :return: (String) The generated transcription
         """
         audio_file = open(audio_name, "rb")

@@ -7,10 +7,14 @@ def generate_html(openai_image, leonardo_image):
     """
     Function to generate an HTML page with the generated photos
 
-    :return:
+    :param openai_image: (String) It contains the name of the OpenAi generated image
+    :param leonardo_image: (String) It contains the name of the Leonardo generated image
+
+    :return: (String) Returns the file path of the HTML generated file
     """
 
     now = datetime.now()
+    # Create the full path of the images
     full_path_openai = os.path.abspath(openai_image)
     full_path_leonardo = os.path.abspath(leonardo_image)
 
@@ -73,7 +77,7 @@ def generate_html(openai_image, leonardo_image):
 
 def open_html_file(file_name):
     """
-    Function to open an HTML page on browser
+    Function to open an HTML page on the browser
 
     :param file_name: (String) Name of the file to be opened
     """

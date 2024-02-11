@@ -6,8 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="f5d99e03-08d1-4993-932a-a1e1f8a7aedc" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ai_apis/api_leonardo.py" beforeDir="false" afterPath="$PROJECT_DIR$/ai_apis/api_leonardo.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ai_apis/api_openai.py" beforeDir="false" afterPath="$PROJECT_DIR$/ai_apis/api_openai.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app_functioning/audio.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_functioning/audio.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app_functioning/downloads.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_functioning/downloads.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app_functioning/text.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_functioning/text.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user_interaction/html_generation.py" beforeDir="false" afterPath="$PROJECT_DIR$/user_interaction/html_generation.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
