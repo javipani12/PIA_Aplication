@@ -4,8 +4,8 @@
 This application allows you to generate some images with OpenAI and Leonardo with your voice.
 
 # Installation and usage
-[!WARNING]
-It is necessary to have a valid account of OpenAI and Leonardo to use this application
+> [!WARNING]
+> It is necessary to have a valid account of OpenAI and Leonardo to use this application
 
 To install the project you have to download the ZIP file, unzip it and open it on your favourite environment that allows Python.
 Then on the path of the project, you have to create a new file called ".env" that will contain these lines:
@@ -16,8 +16,8 @@ Then on the path of the project, you have to create a new file called ".env" tha
 
 To know the available languages check the next [link](https://github.com/openai/whisper#available-models-and-languages)
 
-[!CAUTION]
-Probably you will have to install some packages that the project will mark as warnings.
+> [!CAUTION]
+> Probably you will have to install some packages that the project will mark as warnings.
 
 Then connect your microphone to your computer. Now you are prepared to use the application by running the file "main.py".
 
