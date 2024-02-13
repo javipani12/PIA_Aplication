@@ -25,7 +25,9 @@ Then connect your microphone to your computer. Now you are prepared to use the a
 Here we leave the links with official documentation of apis we have used inside the project:
     
 Text to speech: [link](https://platform.openai.com/docs/guides/text-to-speech)
+
 DALL-E 2: [link](https://platform.openai.com/docs/guides/images/image-generation?context=node)
+
 Leonardo AI: [link](https://pypi.org/project/leonardo-api/)
     
 # Authors :technologist:
