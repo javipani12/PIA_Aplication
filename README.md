@@ -21,6 +21,12 @@ To know the available languages check the next [link](https://github.com/openai/
 
 Then connect your microphone to your computer. Now you are prepared to use the application by running the file "main.py".
 
+# Libraries documentation
+Here we leave the links with official documentation of apis we have used inside the project:
+    Text to speech: [link](https://platform.openai.com/docs/guides/text-to-speech)
+    DALL-E 2: [link](https://platform.openai.com/docs/guides/images/image-generation?context=node)
+    Leonardo AI: [link](https://pypi.org/project/leonardo-api/)
+    
 # Authors :technologist:
 | [<img src="https://avatars.githubusercontent.com/u/117437024?v=4" width=115><br><sub>Diego Castilla Saez</sub>](https://github.com/DiegoCS77) | [<img src="https://avatars.githubusercontent.com/u/117436698?v=4" width=115><br><sub>Javier Fernández Paniagua</sub>](https://github.com/javipani12) |
 |:--------------------------------------------------------------------------------------------------------------------------------------------------:|:--------------------------------------------------------------------------------------------------:|
