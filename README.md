@@ -22,7 +22,7 @@ To know the available languages check the next [link](https://github.com/openai/
 Then connect your microphone to your computer. Now you are prepared to use the application by running the file "main.py".
 
 # Libraries documentation
-Here we leave the links with official documentation of apis we have used inside the project:
+Here we leave the links with official documentation of apis we have used in the project:
     
 Text to speech: [link](https://platform.openai.com/docs/guides/text-to-speech)
 
