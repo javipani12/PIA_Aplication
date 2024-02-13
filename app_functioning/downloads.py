@@ -1,4 +1,6 @@
+# This is used to set a name to the image.
 from datetime import datetime
+# This library is used to download the image.
 import requests
 
 

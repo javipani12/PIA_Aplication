@@ -1,3 +1,5 @@
+# Library from openai which connect with client to transform speech 
+# to text and generate different images with Dall-e 2.
 from openai import OpenAI
 
 
@@ -9,6 +11,7 @@ class My_OpenAI:
     def generate_image(self, prompt):
         """
         This function is used to generate an image on OpenAI based on a prompt
+        Reference to the code: https://platform.openai.com/docs/guides/images/usage?context=node
 
         :param prompt: (String) The text to generate the image
         :return: (String) URL of the generated image
@@ -31,7 +34,8 @@ class My_OpenAI:
     def speech_to_text(self, audio_name, language):
         """
         Method to transform an audio to text
-
+        Reference to the code: https://platform.openai.com/docs/guides/text-to-speech
+        
         :param audio_name: (String) File name of the audio to transcript
         :param language: (String) The language to transcript the audio
         :return: (String) The generated transcription

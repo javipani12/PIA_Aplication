@@ -1,8 +1,19 @@
+# Library which allow us to connect with Leonardo AI for image
+# generations.
 from leonardo_api import Leonardo
 
 
 class My_Leonardo():
+    '''
+    All methods created in this class have been obtained from 
+    this website: https://pypi.org/project/leonardo-api/
+    '''
+
     def __init__(self, auth_token):
+        '''
+        Here it is created an object with leonardo ai connection
+        using the token given by Leonardo AI.
+        '''
         self.leonardo = Leonardo(auth_token=auth_token)
 
     def get_user_info(self):

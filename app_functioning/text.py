@@ -1,4 +1,7 @@
+# Library that is used to translate text.
 import translators as ts
+# This is used to load the different stored keywords
+# in json file.
 import json
 
 

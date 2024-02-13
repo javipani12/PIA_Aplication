@@ -1,4 +1,6 @@
+# This is used to get the enviroment variables.
 import os
+# This is used to load the enviroment.
 from dotenv import load_dotenv
 
 

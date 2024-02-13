@@ -1,5 +1,8 @@
+# This is used to get the image's absolute path
 import os
+# This is used to set the html name.
 from datetime import datetime
+# Library that is used to open a html file.
 import webbrowser
 
 

@@ -1,4 +1,6 @@
+# Library is used to remove files.
 import os
+# These libraries are used to record and save the audio.
 import pyaudio
 import wave
 from datetime import datetime
@@ -7,6 +9,7 @@ from datetime import datetime
 def record_audio():
     """
     This function is used to record an audio in .wav format
+    It was developed in class.
 
     :return: (String) File name of the created audio
     """
@@ -39,7 +42,7 @@ def record_audio():
     p.terminate()
     print('Record has been finished')
 
-    # Store the record as a WAV archive
+    # Store the record as a WAV archive whose name use the current datetime.
     now = datetime.now()
     audio_name = "media/audios/" + now.strftime("%d%m%y_%H%M%S") + ".wav"
     wf = wave.open(audio_name, 'wb')
