@@ -1,4 +1,4 @@
-# Importing the different libraries we have created.
+# Importing the different files we have created.
 from user_interaction import html_generation as html
 from ai_apis import api_openai as aop, api_leonardo as al
 from app_functioning import text as tx, audio as au

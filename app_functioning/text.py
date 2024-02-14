@@ -1,7 +1,7 @@
 # Library that is used to translate text.
 import translators as ts
-# This is used to load the different stored keywords
-# in json file.
+# This is used to load the different stored keywords-values
+# in a json file.
 import json
 
 
@@ -22,32 +22,30 @@ def improve_prompt(prompt, language):
         if language == 'es':
             if word in prompt:
                 counter += 1
-                return create_improved_prompt(prompt, dictionary, word)
+                return create_improved_prompt(prompt, dictionary[word])
         else:
             if translate(word, language) in prompt:
                 counter += 1
-                return create_improved_prompt(prompt, dictionary, word, False, language)
+                return create_improved_prompt(prompt, dictionary[word], language)
 
     if counter == 0:
         return prompt
 
 
-def create_improved_prompt(prompt, prompt_dictionary, key_word, original_lan=True, language='es'):
+def create_improved_prompt(prompt, dictionary_value, language='es'):
     """
     This function selects the details for the improved prompt based on the key word
 
     :param prompt: (String) The text that will be improved
-    :param prompt_dictionary: (Dict) Dictionary that contains the details related to the keywords
-    :param key_word: (String) It depends on this word which details will be selected on prompt_dictionary
-    :param original_lan: (Boolean) It determines if the language is spanish or other one
+    :param dictionary_value: (String) Value of the keyword on dictionary
     :param language: (String) Language to translate the content of the improved prompt
     :return: (String) The generated improved prompt
     """
 
-    if original_lan:
-        improved_prompt = prompt + prompt_dictionary[key_word]
+    if language == 'es':
+        improved_prompt = prompt + dictionary_value
     else:
-        content_translated = translate(prompt_dictionary[key_word], language)
+        content_translated = translate(dictionary_value, language)
         improved_prompt = prompt + content_translated
 
     return improved_prompt
